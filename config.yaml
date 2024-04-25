@@ -31,12 +31,12 @@ units:
 
   # Shift value of the controller
   controller_shift_x: kx+3.25
-  controller_shift_y: 9
+  controller_shift_y: 10.491
   # Shift value of the battery plug
-  battery_shift_x: kx+3.25
+  battery_shift_x: kx+2.5
   battery_shift_y: -10
   # Shift value of the reset button
-  reset_shift_x: kx+10
+  reset_shift_x: .65kx
   reset_shift_y: -20
   # Shift value of the slider switch
   slider_shift_x: kx+12.5
@@ -201,7 +201,7 @@ pcbs:
 
     footprints:
       choc_hotswap:
-        what: switch_choc_v1_v2
+        what: ceoloide/switch_choc_v1_v2
         where: true
         params:
           reversible: true
@@ -213,25 +213,26 @@ pcbs:
           to: GND
 
       controller:
-        what: mcu_nice_nano
+        what: ceoloide/mcu_nice_nano
         where:
           ref: matrix_inner_home
           shift: [controller_shift_x,controller_shift_y]
         params:
           reversible: true
           reverse_mount: true
+          only_required_jumpers: true
 
       battery:
-        what: battery_connector_jst_ph_2
+        what: ceoloide/battery_connector_jst_ph_2
         params:
           reversible: true
         where:
           ref: matrix_inner_home
           shift: [battery_shift_x,battery_shift_y]
-          rotate: 0
+          rotate: -90
 
       reset:
-        what: reset_switch_tht_top
+        what: ceoloide/reset_switch_tht_top
         params:
           reversible: true
           from: GND
@@ -242,7 +243,7 @@ pcbs:
           rotate: 90
 
       slider:
-        what: power_switch_smd_side
+        what: ceoloide/power_switch_smd_side
         params:
           reversible: true
         where:

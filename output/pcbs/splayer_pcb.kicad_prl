@@ -4,32 +4,7 @@
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "",
-      "P6",
-      "GND",
-      "P3",
-      "P1",
-      "P7",
-      "P4",
-      "P0",
-      "P8",
-      "P5",
-      "P2",
-      "P15",
-      "P19",
-      "P21",
-      "P14",
-      "P18",
-      "P20",
-      "P9",
-      "P16",
-      "P10",
-      "RAW",
-      "RST",
-      "VCC",
-      "pos"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -93,7 +68,7 @@
       39,
       40
     ],
-    "visible_layers": "fffffff_ffffffff",
+    "visible_layers": "fffffef_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
