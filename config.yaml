@@ -36,11 +36,11 @@ units:
   battery_shift_x: kx+2.5
   battery_shift_y: -10
   # Shift value of the reset button
-  reset_shift_x: .65kx
-  reset_shift_y: -20
+  reset_shift_x: kx+12.5
+  reset_shift_y: -15
   # Shift value of the slider switch
   slider_shift_x: kx+12.5
-  slider_shift_y: -30
+  slider_shift_y: -25
 
 points:
   key:
@@ -232,7 +232,7 @@ pcbs:
           rotate: -90
 
       reset:
-        what: ceoloide/reset_switch_tht_top
+        what: ceoloide/reset_switch_smd_side
         params:
           reversible: true
           from: GND
@@ -240,7 +240,7 @@ pcbs:
         where:
           ref: matrix_inner_home
           shift: [reset_shift_x,reset_shift_y]
-          rotate: 90
+          rotate: -90
 
       slider:
         what: ceoloide/power_switch_smd_side
@@ -250,35 +250,66 @@ pcbs:
           ref: matrix_inner_home
           shift: [slider_shift_x,slider_shift_y]
 
+
+
+      right_cover_hole:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_inner]
+          shift: [.3kx, .8ky]
+
+      left_cover_hole:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_inner]
+          shift: [-.7kx, .8ky]
+
+
+      #need to widen pcb holes to fit standoffs!
       hole_top_left:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_pinky_top]
           shift: [.675kx,0]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_top_right:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
-          ref: [matrix_inner_top]
+          ref: [matrix_index_top]
           shift: [.5kx,-.5ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_bottom_right:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
-          ref: [matrix_ring_bottom]
-          shift: [0,-.75ky]
+          ref: [matrix_pinky_home]
+          shift: [.62kx,-.1ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_bottom_left:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
-          ref: [matrix_index_bottom]
-          shift: [0,-.65ky]
+          ref: [matrix_middle_bottom]
+          shift: [0,-1.1ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_thumbs:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [thumbs_main]
-          shift: [.55kx,-.5]
+          shift: [.575kx,-.1kx]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
   case_blueprint:
     outlines:
@@ -286,32 +317,61 @@ pcbs:
         outline: case_top_plate
 
     footprints:
+      right_cover_hole:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_inner]
+          shift: [.3kx, .8ky]
+
+      left_cover_hole:
+        what: ceoloide/mounting_hole_npth
+        where:
+          ref: [thumbs_inner]
+          shift: [-.7kx, .8ky]
+
+
+      #need to widen pcb holes to fit standoffs!
       hole_top_left:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_pinky_top]
           shift: [.675kx,0]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_top_right:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
-          ref: [matrix_inner_top]
+          ref: [matrix_index_top]
           shift: [.5kx,-.5ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_bottom_right:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_ring_bottom]
           shift: [0,-.75ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_bottom_left:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [matrix_index_bottom]
           shift: [0,-.65ky]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
 
       hole_thumbs:
-        what: mountinghole
+        what: ceoloide/mounting_hole_npth
         where:
           ref: [thumbs_main]
-          shift: [.55kx,-.5]
+          shift: [.575kx,-.1kx]
+        params:
+          hole_size: '5'
+          hole_drill: '5'
