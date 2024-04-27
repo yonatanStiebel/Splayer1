@@ -5,7 +5,7 @@
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.4300000071525574,
@@ -78,7 +78,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "splayer_pcb.kicad_prl",
+    "filename": "ready_splayer_pcb.kicad_prl",
     "version": 3
   },
   "project": {

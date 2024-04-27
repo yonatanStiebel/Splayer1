@@ -61,11 +61,11 @@ points:
             splay: pinky_splay
           rows:
               top:
-                column_net: P1
+                column_net: P2
               home:
-                column_net: P3
-              bottom:
                 column_net: P6
+              bottom:
+                column_net: P8
 
         ring:
           key:
@@ -76,7 +76,7 @@ points:
             top:
               column_net: P0
             home:
-              column_net: P4
+              column_net: P5
             bottom:
               column_net: P7
 
@@ -87,11 +87,11 @@ points:
             spread: ring_middle_stagger
           rows:
             top:
-              column_net: P2
+              column_net: P1
             home:
-              column_net: P5
+              column_net: P3
             bottom:
-              column_net: P8
+              column_net: P4
 
         index:
           key:
@@ -130,7 +130,7 @@ points:
       columns:
         outer:
           key:
-            column_net: P9
+            column_net: P10
 
         main:
           key:
@@ -143,7 +143,7 @@ points:
           key:
             splay: thumb_splay
             shift: [6,-3]
-            column_net: P10
+            column_net: P9
 
 outlines:
   keys_outline:
@@ -249,6 +249,46 @@ pcbs:
         where:
           ref: matrix_inner_home
           shift: [slider_shift_x,slider_shift_y]
+
+      via1:
+        what: via
+        where:
+          ref: matrix_inner_home
+          shift: [reset_shift_x,reset_shift_y+5]
+        params:
+          net: GND
+
+      via2:
+        what: via
+        where:
+          ref: matrix_inner_home
+          shift: [battery_shift_x+3,battery_shift_y]
+        params:
+          net: GND
+
+      via3:
+        what: via
+        where:
+          ref: matrix_inner_home
+          shift: [slider_shift_x-4,slider_shift_y+2]
+        params:
+          net: BAT_P
+
+      via4:
+        what: via
+        where:
+          ref: matrix_inner_home
+          shift: [slider_shift_x-4,slider_shift_y-1]
+        params:
+          net: RAW
+
+      via5:
+        what: via
+        where:
+          ref: matrix_inner_home
+          shift: [battery_shift_x-4,battery_shift_y-4]
+        params:
+          net: BAT_P
 
 
 
