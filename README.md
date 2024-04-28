@@ -3,13 +3,22 @@
 <br>
 
 <img
-    src = 'Splayer1_logo.PNG'
+    src = 'images/Splayer1_logo.PNG'
     width = 400
-    align = center
+    align = middle
 />
 
 
-**Splayer1** is a split, wireless, ortholinear, column-staggered, splayed keyboard. 
+**Splayer1** is a split, wireless, ortholinear, column-staggered, splayed keyboard.
+
+<br>
+
+<img
+    src = 'images/pcb_kicad_blueprint.PNG'
+    width = 400
+    align = middle
+/>
+
 
 Each half of the keyboard has 3 rows, 5 columns and 3 extra thumb keys. 
 
