@@ -5,7 +5,7 @@
 <img
     src = 'images/Splayer1_logo.PNG'
     width = 400
-    align = middle
+    align = 'middle'
 />
 
 
@@ -14,9 +14,9 @@
 <br>
 
 <img
-    src = 'images/pcb_kicad_blueprint.PNG'
+    src = 'images/pcb_kicad_blueprint.png'
     width = 400
-    align = middle
+    align = 'middle'
 />
 
 
