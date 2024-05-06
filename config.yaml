@@ -1,5 +1,6 @@
 metadata:
-  engine: 4.0.2
+  engine: 4.1.0
+  template: kicad8
   keyboard: Splayer 1
   version: 1.0
   author: Yoragon
@@ -61,11 +62,14 @@ points:
             splay: pinky_splay
           rows:
               top:
-                column_net: P2
+#                column_net: P2
+                column_net: P21
               home:
-                column_net: P6
+#                column_net: P6
+                column_net: P15
               bottom:
-                column_net: P8
+#                column_net: P8
+                column_net: P16
 
         ring:
           key:
@@ -76,9 +80,11 @@ points:
             top:
               column_net: P0
             home:
-              column_net: P5
+#              column_net: P5
+              column_net: P18
             bottom:
-              column_net: P7
+#              column_net: P7
+              column_net: P14
 
         middle:
           key:
@@ -89,31 +95,39 @@ points:
             top:
               column_net: P1
             home:
-              column_net: P3
+#              column_net: P3
+              column_net: P20
             bottom:
-              column_net: P4
+#              column_net: P4
+              column_net: P19
 
         index:
           key:
             stagger: -matrix_stagger
           rows:
             top:
-              column_net: P21
+#              column_net: P21
+              column_net: P2
             home:
-              column_net: P19
+#              column_net: P19
+              column_net: P4
             bottom:
-              column_net: P15
+#              column_net: P15
+              column_net: P6
 
         inner:
           key:
             stagger: -matrix_stagger
           rows:
             top:
-              column_net: P20
+#              column_net: P20
+              column_net: P3
             home:
-              column_net: P18
+#              column_net: P18
+              column_net: P5
             bottom:
-              column_net: P14
+#              column_net: P14
+              column_net: P7
 
       rows:
         bottom:
@@ -130,20 +144,23 @@ points:
       columns:
         outer:
           key:
-            column_net: P10
+#            column_net: P10
+            column_net: P9
 
         main:
           key:
             bind: [0,0,0,3]
             splay: thumb_splay
             shift: [3,-2]
-            column_net: P16
+#            column_net: P16
+            column_net: P8
 
         inner:
           key:
             splay: thumb_splay
             shift: [6,-3]
-            column_net: P9
+#            column_net: P9
+            column_net: P10
 
 outlines:
   keys_outline:
@@ -204,6 +221,7 @@ pcbs:
         what: ceoloide/switch_choc_v1_v2
         where: true
         params:
+          choc_v2_support: false
           reversible: true
           solder: true
           include_keycap: true
@@ -219,7 +237,7 @@ pcbs:
           shift: [controller_shift_x,controller_shift_y]
         params:
           reversible: true
-          reverse_mount: true
+#          reverse_mount: true
           only_required_jumpers: true
 
       battery:

@@ -5,12 +5,12 @@
       "Application": "Pcbnew",
       "Version": "8.0.1"
     },
-    "CreationDate": "2024-04-29T16:42:10+03:00"
+    "CreationDate": "2024-05-06T14:57:41+03:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "ready_splayer_pcb",
-      "GUID": "72656164-795f-4737-906c-617965725f70",
+      "Name": "new_ready_splayer_pcb",
+      "GUID": "6e65775f-7265-4616-9479-5f73706c6179",
       "Revision": "v1.0.0"
     },
     "Size": {
@@ -32,47 +32,47 @@
   ],
   "FilesAttributes": [
     {
-      "Path": "ready_splayer_pcb-F_Cu.gbr",
+      "Path": "new_ready_splayer_pcb-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-B_Cu.gbr",
+      "Path": "new_ready_splayer_pcb-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-F_Paste.gbr",
+      "Path": "new_ready_splayer_pcb-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-B_Paste.gbr",
+      "Path": "new_ready_splayer_pcb-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-F_Silkscreen.gbr",
+      "Path": "new_ready_splayer_pcb-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-B_Silkscreen.gbr",
+      "Path": "new_ready_splayer_pcb-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "ready_splayer_pcb-F_Mask.gbr",
+      "Path": "new_ready_splayer_pcb-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "ready_splayer_pcb-B_Mask.gbr",
+      "Path": "new_ready_splayer_pcb-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "ready_splayer_pcb-Edge_Cuts.gbr",
+      "Path": "new_ready_splayer_pcb-Edge_Cuts.gbr",
       "FileFunction": "Profile",
       "FilePolarity": "Positive"
     }

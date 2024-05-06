@@ -1,11 +1,11 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
     "hidden_nets": [],
-    "high_contrast_mode": 1,
+    "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
       "images": 0.4300000071525574,
@@ -68,7 +68,7 @@
       39,
       40
     ],
-    "visible_layers": "ffffffb_ffffffff",
+    "visible_layers": "fffffff_ffffffff",
     "zone_display_mode": 0
   },
   "git": {
@@ -78,7 +78,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "splayer_pcb.kicad_prl",
+    "filename": "new_ready_splayer_pcb.kicad_prl",
     "version": 3
   },
   "project": {
