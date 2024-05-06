@@ -253,6 +253,7 @@ pcbs:
         what: ceoloide/reset_switch_smd_side
         params:
           reversible: true
+          include_bosses: true
           from: GND
           to: RST
         where:
