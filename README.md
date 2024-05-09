@@ -21,8 +21,8 @@ Each half of the keyboard has 3 rows, 5 columns and 3 extra thumb keys.
 
 The pinky and ring finger columns are slightly staggered and splayed (hence the name), making for a non-aggressive layout.
 
-The board is choc-spaced, compatible with both v1 Kailh Choc switches. 
+The board is choc-spaced, compatible with V1 Kailh Choc switches. 
 
 The keyboard is diodeless and hotswappable, so it can be assembled with minimal solder work. 
 
-The PCB is flippable, and can be used for both halves of the keyboard.
+The PCB is flippable, and meant to be used for both halves of the keyboard.
